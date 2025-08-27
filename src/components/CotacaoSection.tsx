@@ -233,12 +233,12 @@ Aguardo contato para mais detalhes!`;
                     type="submit"
                     variant="premium"
                     size="lg"
-                    className="px-12 py-4 text-lg font-semibold shadow-button"
+                    className="w-full md:w-auto px-8 md:px-12 py-3 md:py-4 text-base md:text-lg font-semibold shadow-button"
                   >
-                    <Send className="w-5 h-5 mr-2" />
+                    <Send className="w-4 h-4 md:w-5 md:h-5 mr-2" />
                     Enviar Cotação via WhatsApp
                   </Button>
-                  <p className="text-sm text-muted-foreground mt-4">
+                  <p className="text-xs md:text-sm text-muted-foreground mt-4">
                     * Campos obrigatórios. Resposta garantida em até 2 horas.
                   </p>
                 </div>
