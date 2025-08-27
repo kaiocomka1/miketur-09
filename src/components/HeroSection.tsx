@@ -12,9 +12,9 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="inicio" className="relative min-h-screen flex items-center justify-center overflow-hidden hero-section">
+    <section id="inicio" className="relative min-h-screen w-full max-w-[100vw] flex items-center justify-center overflow-hidden hero-section">
       {/* Background Image */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 w-full">
         <img 
           src={heroImage} 
           alt="Destino paradisíaco" 
@@ -24,7 +24,7 @@ const HeroSection = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 lg:px-8 text-center text-white">
+      <div className="relative z-10 w-full max-w-[100vw] px-4 lg:px-8 text-center text-white">
         <div className="max-w-4xl mx-auto animate-fade-in">
           <h1 className="font-playfair text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
             <span className="block">Sua viagem começa com</span>

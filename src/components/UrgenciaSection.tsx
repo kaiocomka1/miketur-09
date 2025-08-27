@@ -36,15 +36,15 @@ const UrgenciaSection = () => {
   };
 
   return (
-    <section className="py-16 bg-gradient-to-r from-secondary to-primary text-white relative overflow-hidden">
+    <section className="py-16 bg-gradient-to-r from-secondary to-primary text-white relative overflow-hidden w-full">
       {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-10">
+      <div className="absolute inset-0 opacity-10 overflow-hidden">
         <div className="absolute top-10 left-10 w-32 h-32 border border-white/20 rounded-full"></div>
         <div className="absolute bottom-10 right-10 w-24 h-24 border border-white/20 rounded-full"></div>
         <div className="absolute top-1/2 left-1/3 w-16 h-16 border border-white/20 rounded-full"></div>
       </div>
 
-      <div className="container mx-auto px-4 lg:px-8 relative z-10">
+      <div className="w-full max-w-[100vw] px-4 lg:px-8 relative z-10">
         <div className="text-center max-w-4xl mx-auto animate-fade-in">
           <div className="flex items-center justify-center gap-2 mb-4">
             <Flame className="w-8 h-8 text-accent animate-pulse-slow" />
@@ -67,24 +67,24 @@ const UrgenciaSection = () => {
               <span className="text-lg font-semibold">Tempo restante para garantir prioridade:</span>
             </div>
             
-            <div className="flex justify-center gap-4 text-center">
-              <div className="bg-white/20 backdrop-blur-sm rounded-lg p-4 min-w-[80px]">
-                <div className="text-3xl md:text-4xl font-bold text-accent">
+            <div className="flex justify-center gap-2 md:gap-4 text-center max-w-full overflow-x-auto">
+              <div className="bg-white/20 backdrop-blur-sm rounded-lg p-3 md:p-4 min-w-[70px] md:min-w-[80px] flex-shrink-0">
+                <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-accent">
                   {timeLeft.hours.toString().padStart(2, '0')}
                 </div>
-                <div className="text-sm text-white/80">Horas</div>
+                <div className="text-xs md:text-sm text-white/80">Horas</div>
               </div>
-              <div className="bg-white/20 backdrop-blur-sm rounded-lg p-4 min-w-[80px]">
-                <div className="text-3xl md:text-4xl font-bold text-accent">
+              <div className="bg-white/20 backdrop-blur-sm rounded-lg p-3 md:p-4 min-w-[70px] md:min-w-[80px] flex-shrink-0">
+                <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-accent">
                   {timeLeft.minutes.toString().padStart(2, '0')}
                 </div>
-                <div className="text-sm text-white/80">Minutos</div>
+                <div className="text-xs md:text-sm text-white/80">Minutos</div>
               </div>
-              <div className="bg-white/20 backdrop-blur-sm rounded-lg p-4 min-w-[80px]">
-                <div className="text-3xl md:text-4xl font-bold text-accent">
+              <div className="bg-white/20 backdrop-blur-sm rounded-lg p-3 md:p-4 min-w-[70px] md:min-w-[80px] flex-shrink-0">
+                <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-accent">
                   {timeLeft.seconds.toString().padStart(2, '0')}
                 </div>
-                <div className="text-sm text-white/80">Segundos</div>
+                <div className="text-xs md:text-sm text-white/80">Segundos</div>
               </div>
             </div>
           </div>

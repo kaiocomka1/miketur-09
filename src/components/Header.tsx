@@ -24,10 +24,10 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border shadow-card">
-      <div className="container mx-auto px-4 lg:px-8">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border shadow-card w-full max-w-[100vw]">
+      <div className="w-full max-w-[100vw] px-4 lg:px-8">
         {/* Mobile Layout */}
-        <div className="flex items-center justify-start h-16 md:h-20 md:justify-between">
+        <div className="flex items-center justify-start h-16 md:h-20 md:justify-between w-full">
           {/* Logo */}
           <div className="flex items-center flex-shrink-0">
             <img 
@@ -38,24 +38,24 @@ const Header = () => {
           </div>
 
           {/* Mobile Navigation - Right of logo */}
-          <nav className="md:hidden flex items-center ml-4 space-x-3 text-xs">
+          <nav className="md:hidden flex items-center ml-2 space-x-2 text-xs flex-1 justify-end">
             <button 
               onClick={() => scrollToSection('inicio')}
-              className="text-foreground hover:text-primary transition-smooth font-medium px-2 py-1"
+              className="text-foreground hover:text-primary transition-smooth font-medium px-1 py-1 whitespace-nowrap"
             >
               Início
             </button>
             <button 
               onClick={() => scrollToSection('experiencias')}
-              className="text-foreground hover:text-primary transition-smooth font-medium px-2 py-1"
+              className="text-foreground hover:text-primary transition-smooth font-medium px-1 py-1 whitespace-nowrap"
             >
               Experiências
             </button>
             <button 
-              onClick={() => scrollToSection('depoimentos')}
-              className="text-foreground hover:text-primary transition-smooth font-medium px-2 py-1"
+              onClick={scrollToForm}
+              className="bg-primary text-primary-foreground px-2 py-1 rounded text-xs font-medium hover:bg-primary/90 transition-smooth whitespace-nowrap"
             >
-              Depoimentos
+              Cotação
             </button>
           </nav>
 

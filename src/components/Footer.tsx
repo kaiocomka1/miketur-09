@@ -20,8 +20,8 @@ const Footer = () => {
   };
 
   return (
-    <footer id="contato" className="bg-secondary text-white py-16">
-      <div className="container mx-auto px-4 lg:px-8">
+    <footer id="contato" className="bg-secondary text-white py-16 w-full max-w-[100vw] overflow-x-hidden">
+      <div className="w-full max-w-[100vw] px-4 lg:px-8">
         <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8">
           {/* Logo e Descrição */}
           <div className="lg:col-span-1">
